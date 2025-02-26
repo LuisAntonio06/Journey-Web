@@ -104,15 +104,18 @@ h3 {
 .input__formulario:focus, .submit__formulario:focus {
     outline: none; /* Elimina el contorno azul predeterminado */
     box-shadow: none; /* Evita resplandores en algunos navegadores */
-    }
+}
+
+.input__formulario-correo {
+    margin-top: 0rem;
+}
 
 
 .submit__formulario {
-    display: flex;
-    width: 20rem;
+    display: block;
     text-align: center;
     margin:  0 auto;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
     background-color: transparent;
     border-radius: 1rem;
     color: var(--negro);
@@ -123,7 +126,6 @@ h3 {
     transition-property: background color border;
     transition-duration: 300ms;
 }
-
 
 
 .submit__formulario:hover {
@@ -154,6 +156,14 @@ h3 {
     width: 25rem;
 }
 
+@media screen and (max-width: 768px) {
+    .journey__imagen {
+        display: none;
+    }
+     
+}
+
+
 .enlace__formulario {
     margin-top: 2.5rem;
     transition-duration: 200ms;
@@ -163,3 +173,6 @@ h3 {
     color: var(--azulPrincipal) ;
 }
 
+
+
+/* Barra LateraL */
