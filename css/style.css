@@ -2,7 +2,7 @@
 :root {
     --rojoPrimario: #FF3131;
     --rojoSecundario: #FF5757;
-    --azul: #5271FF;
+    --azul: #3B66FF;
     --blanco: #FFFFFF;
     --gris: #B3B2AE;
     --azulPrincipal: #174b93;
@@ -19,7 +19,11 @@ html {
 
 *, *::before, *::after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
+
+
 
 body {
     display: flex;
@@ -30,7 +34,7 @@ body {
     font-family: var(--fuente-principal);
     line-height: 1.5;
 
-    background: linear-gradient(90deg, #001F3F, #0074D9, #00A8E8); /* Degradado más visible */
+    background: linear-gradient(135deg, #0F2C80, #4F9DFF);
     background-size: 100%;
     background-position: top;
     background-repeat: no-repeat;
@@ -40,10 +44,6 @@ input {
     font-family: var(--fuente-principal);
 }
 
-
-#imagenInicio {
-    max-width: 80%;
-}
 
 
 /* Contenedor principal */
@@ -70,9 +70,16 @@ h3 {
 }
 
 /* Sección de Login */
+
+
+#imagenInicio {
+    max-width: 80%;
+}
+
 .heading__login {
     text-align: center;
     color: var(--blanco);
+    margin-bottom: 2rem;
 }
 
 /* Formulario */
@@ -90,6 +97,7 @@ h3 {
     font-weight: 700;
     color: var(--negro);
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .input__formulario {
@@ -101,13 +109,14 @@ h3 {
     padding: 1rem;
 }
 
+
 .input__formulario:focus, .submit__formulario:focus {
     outline: none; /* Elimina el contorno azul predeterminado */
     box-shadow: none; /* Evita resplandores en algunos navegadores */
 }
 
 .input__formulario-correo {
-    margin-top: 0rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -167,7 +176,7 @@ h3 {
 .enlace__formulario {
     margin-top: 2.5rem;
     transition-duration: 200ms;
-    transition-property: color;
+    transition-property: color ;
 }
 .enlace__formulario:hover {
     color: var(--azulPrincipal) ;
@@ -175,4 +184,12 @@ h3 {
 
 
 
+
+
+
+
+
+
+
 /* Barra LateraL */
+

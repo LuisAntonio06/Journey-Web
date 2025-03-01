@@ -2,7 +2,6 @@ const imagenInicio = document.querySelector('#imagenInicio');
 const sectionLogin = document.querySelector('#sectionFormulario');
 
 
-window.addEventListener('DOMContentLoaded' , () => {
 sectionLogin.style.display = 'none';
 sectionLogin.style.opacity = '0'; // Inicialmente oculto con opacidad
 
@@ -20,10 +19,9 @@ setTimeout(() => {
         setTimeout(() => {
             sectionLogin.style.opacity = '1'; // Hace que aparezca con desvanecimiento
         }, 50); // Pequeño delay para asegurar la visibilidad antes de cambiar opacidad
-    }, 1000); // Espera a que termine la animación de imagenInicio
-}, 2000);
+    }, 500); // Espera a que termine la animación de imagenInicio
+}, 1000);
 
-})
 
 
 
